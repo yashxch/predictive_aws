@@ -142,7 +142,7 @@ resource "aws_cloudwatch_metric_alarm" "health_score" {
   alarm_actions       = [aws_sns_topic.device_alerts.arn]
 }
 
-# CloudWatch Dashboard
+# For CloudWatch Dashboard
 resource "aws_cloudwatch_dashboard" "main" {
   dashboard_name = "PredictiveMaintenanceDashboard"
   dashboard_body = jsonencode({
@@ -236,7 +236,7 @@ def train_model():
     X, scaler = preprocess_data(df)
     y = df['failure']
     
-    # Split data
+    # Split data- train:test
     X_train, X_test, y_train, y_test = train_test_split(
         X, y, test_size=0.2, random_state=42, stratify=y
     )
