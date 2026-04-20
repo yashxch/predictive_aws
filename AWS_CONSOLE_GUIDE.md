@@ -250,7 +250,7 @@ All links assume region: **ap-south-1**
 
 ---
 
-## One-Click Verification
+## Verification
 
 ✅ All metrics publishing → Check **Metrics** page (7 metrics visible)  
 ✅ Dashboard working → Check **Dashboards** page (charts populated)  
